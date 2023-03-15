@@ -2,26 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-const keyBoard = document.querySelector('.keyboard')
-
-keyBoard.addEventListener('keydown', e =>{
-  let codeCombo = 'The keycode is'
-
-  const charA = " KC_A";
-    console.log(e)
-    if(e.key === "a"){
-        codeCombo += charA;
-        console.log(codeCombo);
-    }
-})
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const keyBoard = document.querySelector('.keyboard')
+
+  keyBoard.addEventListener('keydown', e =>{
+    let codeCombo = 'The keycode is'
+
+    const charA = " KC_A";
+      console.log(e)
+      if(e.key === "a"){
+          codeCombo += charA;
+          console.log(codeCombo);
+      }
+  })
   return (
     <div className="App">
 
-      <div class="container">
+      {/* <div class="container">
         <input type="text" class="keyboard" />
         <button class="btn">Send</button>
       </div>
@@ -45,7 +45,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </div>
   )
 }
