@@ -2,11 +2,30 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+const keyBoard = document.querySelector('.keyboard')
+
+keyBoard.addEventListener('keydown', e =>{
+  let codeCombo = 'The keycode is'
+
+  const charA = " KC_A";
+    console.log(e)
+    if(e.key === "a"){
+        codeCombo += charA;
+        console.log(codeCombo);
+    }
+})
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+
+      <div class="container">
+        <input type="text" class="keyboard" />
+        <button class="btn">Send</button>
+      </div>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
