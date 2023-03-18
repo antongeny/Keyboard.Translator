@@ -10,6 +10,7 @@ function App() {
 
   window.addEventListener('keydown', e => {
     // setKeyCombo = '';
+    keyCombo = '';
 
     // console.log(e)
     if(e.key === "a"){
