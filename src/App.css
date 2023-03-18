@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,11 +39,11 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
 
 /* CSS for character input section */
 
-input {
+/* input {
   font-size: 2em;
   padding: 15px;
   border-radius: 12px;
@@ -54,9 +54,9 @@ input {
 }
 input:focus {
   outline: none;
-}
+} */
 
-.btn {
+/* .btn {
   margin-top: 15px;
   color: white;
   background: #192949;
@@ -74,4 +74,4 @@ input:focus {
 }
 .btn:focus {
   outline: none;
-}
+} */

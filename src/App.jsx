@@ -1,27 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [keyCombo, setKeyCombo] = useState('')
 
-  const keyBoard = document.querySelector('.keyboard')
+  let keyCombo = '';
+  const charA = " KC_A";
 
-  keyBoard.addEventListener('keydown', e =>{
-    let codeCombo = 'The keycode is'
+  window.addEventListener('keydown', e => {
+    // setKeyCombo = '';
 
-    const charA = " KC_A";
-      console.log(e)
-      if(e.key === "a"){
-          codeCombo += charA;
-          console.log(codeCombo);
-      }
+    // console.log(e)
+    if(e.key === "a"){
+        keyCombo += charA;
+        console.log(keyCombo);
+    }
+    // return keyCombo;
   })
   return (
     <div className="App">
+        <h2>Press your key combination to program your keyboard</h2>
+        <h3>Your Key Combination is: {keyCombo} </h3>
 
-      {/* <div class="container">
+
+      {/*
         <input type="text" class="keyboard" />
         <button class="btn">Send</button>
       </div>
@@ -42,8 +45,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-      </div>
-      <p className="read-the-docs">
+        <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
     </div>
